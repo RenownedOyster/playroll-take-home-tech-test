@@ -36,6 +36,7 @@ const EmployeeList = () => {
   const [loading, setLoading] = React.useState(true);
 
   const getEmployees = async () => {
+    setLoading(true);
     try {
       const response: any = await fetch(
         `https://627122286a36d4d62c21cf1d.mockapi.io/api/v1/employee`
